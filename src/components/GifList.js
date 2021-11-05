@@ -6,7 +6,10 @@ export default class GifList extends Component {
             <ul>
                 {this.props.gifs.map((gif) => {
                     return (
-                        <img key={gif.url} src={gif.url} alt="gif" />
+                        <li key={gif.url}>
+                            {gif.username}
+                            <img  src={gif.url} alt="gif" />
+                        </li>
                     )
                 })}
                 
