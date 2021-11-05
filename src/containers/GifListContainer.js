@@ -20,9 +20,8 @@ export default class GifListContainer extends Component {
   //         });
   //   }
 
-  handleSearch = (query = "dolphin") => {
+  handleSearch = (query="dog") => {
     //   event.target.prevetDefault()
-    console.log("helllo");
     fetch(
       `https://api.giphy.com/v1/gifs/search?q=${query}&api_key=J03rVTe7qwGIYvH0PgSDBy2Q7V694WJI`
     )
